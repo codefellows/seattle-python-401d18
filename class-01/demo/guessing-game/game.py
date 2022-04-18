@@ -7,7 +7,7 @@ Let's create the classic guessing game I Spy. We'll need...
 """
 things = [
     {
-        "name": "billboard",
+        "solution": "billboard",
         "hints": [
             "bigger than a bread box",
             "rectangular",
@@ -18,7 +18,7 @@ things = [
         ],
     },
     {
-        "name": "chair",
+        "solution": "chair",
         "hints": [
             "has multiple legs",
             "has a restful interface",
@@ -27,7 +27,7 @@ things = [
         ],
     },
     {
-        "name": "???",
+        "solution": "mirror",
         "hints": [
             "copies what you do",
             "is always changing color",
@@ -38,28 +38,27 @@ things = [
     },
 ]
 
+# really long line really long line really long line really long line really long line really long line really long line really long line really long line
+
 
 def guess_a_thing(riddle_index):
-
     thing = things[riddle_index]
 
     success = False
 
-    guess = input("I spy with my little eye... ")
-
     hints = thing["hints"]
 
-    correct_answer = thing["name"]
+    correct_answer = thing["solution"]
 
-    while len(hints):
+    guess = ""
+
+    for hint in hints:
 
         if guess == correct_answer:
             success = True
             break
-
-        hint = hints.pop(0)
-
-        print(f"Nope, but here's a hint - {hint}")
+        else:
+            print(f"Nope, but here's a hint - {hint}")
 
         guess = input("I spy with my little eye... ")
 
@@ -69,7 +68,7 @@ def guess_a_thing(riddle_index):
         print(f"Too bad. It's a {correct_answer}")
 
 
-if __name__ == "__main__":
+def main():
     riddle_index = 0
 
     response = ""
@@ -78,6 +77,10 @@ if __name__ == "__main__":
         riddle_index += 1
         if riddle_index > 1:
             break
-        response = input("Wanna play?")
+        response = input("Wanna play? ")
 
     print("Thanks for playing!")
+
+
+if __name__ == "__main__":
+    main()
