@@ -17,6 +17,7 @@ def fizz_buzz(num):
 
     return str(num)
 
+
 def fiz_buzz_alternate(num):
     word = ''
 

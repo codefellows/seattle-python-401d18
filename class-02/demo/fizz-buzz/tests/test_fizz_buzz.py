@@ -1,11 +1,5 @@
 import pytest
-
-from fizz_buzz import __version__
 from fizz_buzz.fizz_buzz import fizz_buzz, fizz_buzz_sequence, fizz_buzz_dict
-
-
-def test_version():
-    assert __version__ == "0.1.0"
 
 
 def test_one():
