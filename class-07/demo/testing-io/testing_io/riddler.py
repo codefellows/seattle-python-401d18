@@ -18,3 +18,8 @@ class Riddler:
                 break
             else:
                 print("Nope, that's not it.")
+
+
+if __name__ == "__main__":
+    riddler = Riddler(answer="red")
+    riddler.play()
