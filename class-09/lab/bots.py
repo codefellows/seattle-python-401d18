@@ -1,5 +1,5 @@
 """Place in root of Ten Thousand Project,
-at same level as pyproject.toml
+at same level as requirements.txt
 """
 
 from abc import ABC, abstractmethod
