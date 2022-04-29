@@ -18,9 +18,7 @@ class Game:
         self._roller = roller
 
         self.invite_to_play()
-
         self.play_rounds()
-
         self.end_game()
 
     def invite_to_play(self):
