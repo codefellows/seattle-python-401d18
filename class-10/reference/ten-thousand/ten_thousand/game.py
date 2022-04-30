@@ -44,12 +44,10 @@ class Game:
             self.play_round()
 
     def play_round(self):
-        """play single round of game"""
+        """start, play, and end a single round of game"""
 
         self.start_round()
-
         self.play_turn()
-
         self.end_round()
 
     def start_round(self):
@@ -81,7 +79,7 @@ class Game:
                 f"You have {self.banker.shelved} unbanked points and {num_dice} dice remaining"
             )
 
-            # refresh in case of "hot dice"
+            # refresh in case of "hot dice" (or just were able to use all available)
             if num_dice == 0:
                 num_dice = 6
 
