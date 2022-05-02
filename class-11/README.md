@@ -16,6 +16,6 @@ The tool of choice for most are Jupyter Notebooks.
 
 #### Execute
 
-- Jupyter Notebook on development machine
+- Jupyter Notebook on [Kaggle](https://www.kaggle.com/){:target="_blank"}
 - Display user generated images in Notebook
 - Add custom functions to notebook
