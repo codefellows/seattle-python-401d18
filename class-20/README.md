@@ -5,7 +5,7 @@
 - Use any, all, most, or none of what you learned ...
   - Make sure it works great
   - Make sure it's covered in tests
-  - Your may build a back-end for your final project (upon instructor approval)
+  - Your may build a back-end for your project (upon instructor approval)
   - Get approval for any UI beyond CLI
 - Tell a great story!
 
