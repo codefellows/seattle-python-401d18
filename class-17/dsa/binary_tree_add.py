@@ -1,3 +1,10 @@
+class BinaryTree:
+    def __init__(self, root=None, values=None):
+        self.root = root
+        if values:
+            for value in values:
+                self.add(value)
+
     def add(self, value):
 
         node = Node(value)
