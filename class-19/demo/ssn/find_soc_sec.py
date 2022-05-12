@@ -1,7 +1,7 @@
 import re
 
 # this file has been pre-generated with a bunch of text
-# with 10 social security numbers spread throughout
+# with 10 valid social security numbers spread throughout
 with open("./text_with_soc_sec_nums.txt") as f:
     text_from_file = f.read()
 
