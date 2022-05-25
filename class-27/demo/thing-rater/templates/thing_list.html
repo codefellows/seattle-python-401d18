@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+<h1>Thing List</h1>
+{% block content %}
+  {% comment %} {% for thing in object_list %} {% endcomment %}
+  {% comment %} Use below if you use context_object_name in views {% endcomment %}
+  {% for thing in object_list %}
+  <h2><a href="{% url 'thing_detail' thing.pk %}">{{ thing.name }}</a></h2>
+  {% endfor %}
+{% endblock content %}
