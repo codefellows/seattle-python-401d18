@@ -81,9 +81,9 @@ class ThingTests(APITestCase):
         things = Thing.objects.all()
         self.assertEqual(len(things), 0)
 
-    # class 32
+    # class 33
     def test_authentication_required(self):
         self.client.logout()
         url = reverse("thing_list")
         response = self.client.get(url)
-        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
+        self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
