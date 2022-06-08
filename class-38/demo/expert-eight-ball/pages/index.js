@@ -13,6 +13,7 @@ export default function Home() {
     const [questions, setQuestions] = useState([]);
 
     function handleQuestion(question) {
+
         const randIndex = Math.floor(Math.random() * replies.length);
 
         const answer = replies[randIndex];
@@ -28,12 +29,11 @@ export default function Home() {
 
     function getAnswer() {
         if (questions.length == 0) {
-            return "";
+            return '';
         } else {
-            return questions.answer;
+            return questions[questions.length - 1].answer;
         }
     }
-
 
     return (
         <>
@@ -42,20 +42,13 @@ export default function Home() {
             </Head>
             <div>
                 <Header count={questions.length} />
-                <QuestionForm onQuestion={handleQuestion} />
-                <EightBall answer={getAnswer()} />
-                <History questions={questions} />
+                <main>
+                    <QuestionForm onQuestion={handleQuestion} />
+                    <EightBall answer={getAnswer()} />
+                    <History questions={questions} />
+                </main>
                 <Footer />
             </div>
         </>
     );
 }
-
-
-
-
-
-
-
-
-
