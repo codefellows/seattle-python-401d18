@@ -1,4 +1,4 @@
-export default function QuestionForm({onQuestion}) {
+export default function QuestionForm({ onQuestion }) {
 
     function handleSubmit(event) {
         event.preventDefault();
