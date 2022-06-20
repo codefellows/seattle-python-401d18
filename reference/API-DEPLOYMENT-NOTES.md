@@ -11,7 +11,7 @@ It so happens that CodeFellows has such a template available. Let's try it out a
   - Encourage students to create their own template repository to their liking
 - Create a new repo based off `API Quick Start` template
 - Rename to `snacks-api`
-- inspect `pyproject.toml`
+- inspect `requirements.txt`
   - point out the new (or more recent) libraries
     - django-cors-headers
     - django-environ
